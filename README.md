@@ -15,11 +15,11 @@ GitHub Profile<br>
 LeetCode Profile<br>
 Resume Section: Downloadable PDF version of the resume.<br>
 
-## Technologies Used**<br>
+## Technologies Used<br>
 Frontend: HTML, CSS (CSS Grid for layout).<br>
-Design: Responsive and mobile-friendly design.<br>
+IDE: vs code.
 
-## How to Run**<br>
+## How to Run<br>
 Clone this repository:<br>
 Copy code<br>
 git clone https://github.com/srinivas6303/Personal-Portfolio-Website.git<br>
