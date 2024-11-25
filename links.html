@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="utils.css" />
+    <link rel="stylesheet" href="utils2.css" />
+    <link rel="icon" href="imageslogos/links.png" type="image/png" />
+    <title>Links</title>
+
+    <style>
+      .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 60vh;
+        margin: 43px;
+        gap: 10px;
+      }
+
+      .buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 20px;
+        background-color: lightgray;
+      }
+
+      .buttons-container:hover {
+        border: 1px dotted black;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Space between icon and text */
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        transition: background-color 0.3s ease, transform 0.2s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        height: 60px;
+        width: 200px;
+        text-align: center;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+        border: 2px dotted black;
+      }
+
+      .icon {
+        width: 25px;
+        height: 25px;
+      }
+
+      /* LinkedIn Button */
+      .linkedin-btn {
+        background-color: #0077b5;
+      }
+
+      .linkedin-btn:hover {
+        background-color: #005582;
+      }
+
+      /* GitHub Button */
+      .github-btn {
+        background-color: #333;
+      }
+
+      .github-btn:hover {
+        background-color: #555;
+      }
+
+      /* LeetCode Button */
+      .leetcode-btn {
+        background-color: #ffa116;
+      }
+
+      .leetcode-btn:hover {
+        background-color: #cc8500;
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: none;
+        background-color: lightgray;
+        border-radius: 20px;
+      }
+
+      .contact:hover {
+        border: 1px dotted black;
+      }
+
+      .contact img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #ccc; /* Optional: Add a border */
+      }
+
+      .contact img:hover {
+        border: 1px solid #080808; /* Optional: Add a border */
+      }
+
+      .contact .btn {
+        margin: 10px auto;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .contact .email-btn {
+        background-color: green;
+      }
+
+      .contact .email-btn:hover {
+        background-color: darkgreen;
+      }
+
+      .contact .phone-btn {
+        background-color: green;
+      }
+
+      .contact .phone-btn:hover {
+        background-color: darkgreen;
+      }
+
+      h1 img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: -23px;
+        filter: invert(1);
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="grid-container">
+        <!--Sidebar Section-->
+        <aside class="sidebar">
+          <header>
+            <nav class="nav">
+              <a
+                href="http://127.0.0.1:5500/GridProject/website.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/home.png"
+                  alt="Home Logo"
+                  class="nav-logo"
+                />
+                HOME </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Education.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/education.png"
+                  alt="Education Logo"
+                  class="nav-logo"
+                />
+                EDUCATION </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Projects.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/projects.png"
+                  alt="Projects Logo"
+                  class="nav-logo"
+                />
+                PROJECTS </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Intership.html "
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/intership.png"
+                  alt="Internship Logo"
+                  class="nav-logo"
+                />
+                INTERNSHIP </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Technicalskills.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/techskills.png"
+                  alt="Technical Skills Logo"
+                  class="nav-logo"
+                />
+                TECHNICAL SKILLS </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Certificates.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/certificates.png"
+                  alt="Certifications Logo"
+                  class="nav-logo"
+                />
+                CERTIFICATIONS </a
+              ><br />
+
+              <a href="#">
+                <img
+                  src="imageslogos/links.png"
+                  alt="Links Logo"
+                  class="nav-logo"
+                />
+                LINKS </a
+              ><br />
+            </nav>
+          </header>
+        </aside>
+
+        <!--Main Content Section-->
+        <main class="main-content">
+          <section class="sub">
+            <h1><img src="imageslogos/links.png" />LINKS</h1>
+
+            <div class="links">
+              <div class="buttons-container">
+                <!-- LinkedIn Button -->
+                <a
+                  href="https://www.linkedin.com/in/dappusrinivas/"
+                  target="_blank"
+                  class="btn linkedin-btn"
+                >
+                  <img
+                    src="imageslogos/linkedin.png"
+                    alt="LinkedIn Logo"
+                    class="icon"
+                  />
+                  LinkedIn
+                </a>
+
+                <!-- GitHub Button -->
+                <a
+                  href="https://github.com/srinivas6303"
+                  target="_blank"
+                  class="btn github-btn"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+                    alt="GitHub Logo"
+                    class="icon"
+                  />
+                  GitHub
+                </a>
+
+                <!-- LeetCode Button -->
+                <a
+                  href="https://leetcode.com/u/srinivas7075/"
+                  target="_blank"
+                  class="btn leetcode-btn"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                    alt="LeetCode Logo"
+                    class="icon"
+                  />
+                  LeetCode
+                </a>
+              </div>
+
+              <div class="contact">
+                <img
+                  src="imageslogos/srinivas.jpg"
+                  alt="Srinivas's Photo"
+                  style="width: 150px; height: 150px; border-radius: 50%"
+                />
+
+                <!-- Email Button -->
+                <a href="mailto:srinivas64400@gmail.com" class="btn email-btn"
+                  >Gmail: srinivas64400@gmail.com</a
+                >
+
+                <!-- Phone Number -->
+                <a href="tel:+916303666197" class="btn phone-btn"
+                  >Call: +91-6303666197</a
+                >
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

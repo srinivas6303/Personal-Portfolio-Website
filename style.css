@@ -1,0 +1,56 @@
+
+
+
+
+
+
+.about {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about pre {
+    font-size: 15px
+}
+
+.about img {
+    height:190px;
+    width: 200px;
+    border: none;
+    border-radius: 100px;
+
+}
+.about img:hover {
+    border: 2px solid rgb(181, 7, 7);
+
+}
+
+span {
+    color: rgb(181, 7, 7);
+}
+
+button {
+    background-color: rgb(181, 7, 7);
+    color: white;
+    border: none;
+    height: 48px;
+    width: 180px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    font-weight:bold;
+    text-align: center; 
+}
+
+button:hover {
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+

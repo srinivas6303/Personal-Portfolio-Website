@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="utils.css" />
+    <link rel="stylesheet" href="utils2.css" />
+    <link rel="icon" href="imageslogos/techskills.png" type="image/png" />
+    <title>Technical-Skills</title>
+    <style>
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .s {
+        background-color: #d6a5a1;
+        padding: 11px;
+        margin: 20px 9px -18px 10px;
+        border: none;
+        border-radius: 17px;
+        padding-left: 52px;
+      }
+
+      .s:hover {
+        border: 2px dotted black;
+      }
+
+      /* Remove numbers and style main bullets as round */
+      ol {
+        list-style-type: none;
+      }
+
+      ol > li::before {
+        content: "\2022"; /* Unicode for a round bullet */
+        color: black; /* Bullet color */
+        font-size: 20px; /* Adjust size */
+        display: inline-block;
+        width: 1em; /* Space between bullet and text */
+        margin-left: -1em;
+      }
+
+      /* Style sub-bullets as arrows */
+      ul {
+        list-style-type: none; /* Remove default bullet style */
+        margin-left: 1.5em; /* Indent for sub-bullets */
+      }
+
+      ul > li::before {
+        content: "\2192"; /* Unicode for right arrow */
+        color: black; /* Arrow color */
+        font-size: 16px; /* Arrow size */
+        display: inline-block;
+        width: 1em; /* Space between arrow and text */
+        margin-left: -1em;
+      }
+
+      h1 img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: -23px;
+        filter: invert(1);
+        padding-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="grid-container">
+        <!--Sidebar Section-->
+        <aside class="sidebar">
+          <header>
+            <nav class="nav">
+              <a
+                href="http://127.0.0.1:5500/GridProject/website.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/home.png"
+                  alt="Home Logo"
+                  class="nav-logo"
+                />
+                HOME </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Education.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/education.png"
+                  alt="Education Logo"
+                  class="nav-logo"
+                />
+                EDUCATION </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Projects.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/projects.png"
+                  alt="Projects Logo"
+                  class="nav-logo"
+                />
+                PROJECTS </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Intership.html "
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/intership.png"
+                  alt="Internship Logo"
+                  class="nav-logo"
+                />
+                INTERNSHIP </a
+              ><br />
+
+              <a href="#">
+                <img
+                  src="imageslogos/techskills.png"
+                  alt="Technical Skills Logo"
+                  class="nav-logo"
+                />
+                TECHNICAL SKILLS </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/Certificates.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/certificates.png"
+                  alt="Certifications Logo"
+                  class="nav-logo"
+                />
+                CERTIFICATIONS </a
+              ><br />
+
+              <a
+                href="http://127.0.0.1:5500/GridProject/links.html"
+                target="_blank"
+              >
+                <img
+                  src="imageslogos/links.png"
+                  alt="Links Logo"
+                  class="nav-logo"
+                />
+                LINKS </a
+              ><br />
+            </nav>
+          </header>
+        </aside>
+
+        <!--Main Content Section-->
+        <main class="main-content">
+          <section class="sub">
+            <h1><img src="imageslogos/techskills.png" />TECHNICAL SKILLS</h1>
+            <div class="skills">
+              <ol class="s">
+                <li><b>Programming Languages:</b></li>
+                <ul>
+                  <li>Java</li>
+                </ul>
+                <ul>
+                  <li>C language</li>
+                </ul>
+                <ul>
+                  <li>SQL</li>
+                </ul>
+              </ol>
+
+              <ol class="s">
+                <li><b>API:</b></li>
+                <ul>
+                  <li>JDBC(Java Database Connectivity)</li>
+                </ul>
+                <ul>
+                  <li>Rest API</li>
+                </ul>
+                <ul>
+                  <li>Stream APIL</li>
+                </ul>
+              </ol>
+
+              <ol class="s">
+                <li><b>ORM Frameworks:</b></li>
+                <ul>
+                  <li>Hibernate</li>
+                </ul>
+                <ul>
+                  <li>JPA</li>
+                </ul>
+              </ol>
+
+              <ol class="s">
+                <li><b>Java REST API Frameworks:</b></li>
+                <ul>
+                  <li>Spring Boot</li>
+                </ul>
+                <ul>
+                  <li>Spring</li>
+                </ul>
+                <ul>
+                  <li>Jersey</li>
+                </ul>
+              </ol>
+
+              <ol class="s">
+                <li><b>Frontend Technologies:</b></li>
+                <ul>
+                  <li>Html</li>
+                </ul>
+                <ul>
+                  <li>Css</li>
+                </ul>
+                <ul>
+                  <li>Javascript</li>
+                </ul>
+              </ol>
+
+              <ol class="s">
+                <li><b>Content Management Systems (CMS):</b></li>
+                <ul>
+                  <li>Wordpress</li>
+                </ul>
+              </ol>
+
+              <ol class="s">
+                <li><b>Project Management Tool:</b></li>
+                <ul>
+                  <li>Apache Maven</li>
+                </ul>
+              </ol>
+
+              <ol class="s">
+                <li><b>Tools & IDEs:</b></li>
+                <ul>
+                  <li>Postman</li>
+                </ul>
+                <ul>
+                  <li>Git & Github</li>
+                </ul>
+                <ul>
+                  <li>MySQL Workbench</li>
+                </ul>
+                <ul>
+                  <li>Eclipse</li>
+                </ul>
+                <ul>
+                  <li>Spring Tool Suite (STS)</li>
+                </ul>
+                <ul>
+                  <li>IntelliJ IDEA</li>
+                </ul>
+                <ul>
+                  <li>Visual Studio Code</li>
+                </ul>
+              </ol>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

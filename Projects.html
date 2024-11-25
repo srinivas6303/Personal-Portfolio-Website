@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="utils.css" />
+    <link rel="stylesheet" href="utils2.css" />
+    <link rel="icon" href="imageslogos/pr.png" type="image/png" />
+    <title>Projects</title>
+    <style>
+      /* General padding for text sections */
+      div {
+        padding-left: 10px;
+      }
+
+      /* Container for horizontally scrolling the projects */
+      .container {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 33px;
+        padding: 25px;
+        width: 97%;
+        justify-content: start;
+        scroll-behavior: smooth; /* Smooth scrolling */
+      }
+
+      .project {
+        flex: 0 0 100%; /* Ensure each project takes 100% width */
+        scroll-snap-align: start; /* Snap to the start of the container */
+        background: #d6a5a1;
+        border: 1px solid #ddd;
+        border-radius: 24px 39px 39px 24px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: 430px;
+        margin-left: 62px;
+      }
+
+      .project a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .project a:hover {
+        text-decoration: underline;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      /* Remove default scrollbar */
+      .container::-webkit-scrollbar {
+        display: none;
+      }
+
+      h1 img {
+        height: 50px;
+        width: 50px;
+        margin-bottom: -23px;
+        filter: invert(1);
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Sidebar Section -->
+      <aside class="sidebar">
+        <header>
+          <nav class="nav">
+            <a
+              href="http://127.0.0.1:5500/GridProject/website.html"
+              target="_blank"
+            >
+              <img
+                src="imageslogos/home.png"
+                alt="Home Logo"
+                class="nav-logo"
+              />
+              HOME </a
+            ><br />
+
+            <a
+              href="http://127.0.0.1:5500/GridProject/Education.html"
+              target="_blank"
+            >
+              <img
+                src="imageslogos/education.png"
+                alt="Education Logo"
+                class="nav-logo"
+              />
+              EDUCATION </a
+            ><br />
+
+            <a href="#">
+              <img
+                src="imageslogos/projects.png"
+                alt="Projects Logo"
+                class="nav-logo"
+              />
+              PROJECTS </a
+            ><br />
+
+            <a
+              href="http://127.0.0.1:5500/GridProject/Intership.html"
+              target="_blank"
+            >
+              <img
+                src="imageslogos/intership.png"
+                alt="Internship Logo"
+                class="nav-logo"
+              />
+              INTERNSHIP </a
+            ><br />
+
+            <a
+              href="http://127.0.0.1:5500/GridProject/Technicalskills.html"
+              target="_blank"
+            >
+              <img
+                src="imageslogos/techskills.png"
+                alt="Technical Skills Logo"
+                class="nav-logo"
+              />
+              TECHNICAL SKILLS </a
+            ><br />
+
+            <a
+              href="http://127.0.0.1:5500/GridProject/Certificates.html"
+              target="_blank"
+            >
+              <img
+                src="imageslogos/certificates.png"
+                alt="Certifications Logo"
+                class="nav-logo"
+              />
+              CERTIFICATIONS </a
+            ><br />
+
+            <a
+              href="http://127.0.0.1:5500/GridProject/links.html"
+              target="_blank"
+            >
+              <img
+                src="imageslogos/links.png"
+                alt="Links Logo"
+                class="nav-logo"
+              />
+              LINKS </a
+            ><br />
+          </nav>
+        </header>
+      </aside>
+
+      <!-- Main Content Section -->
+      <main class="main-content">
+        <section class="sub">
+          <h1><img src="imageslogos/projects.png" />PROJECTS</h1>
+          <div class="container" id="projectContainer">
+            <!-- Hospital Management System -->
+            <div class="project">
+              <a
+                href="https://github.com/srinivas6303/Hospital-Management-System"
+                ><h2>Hospital Management System</h2></a
+              >
+              <p>
+                <strong>Technologies:</strong> Java, SQL, JDBC |
+                <strong>IDE:</strong> IntelliJ IDEA
+              </p>
+              <p>
+                <strong>Overview:</strong> The Hospital Management System is
+                designed to automate and manage daily hospital operations. It
+                manages information about patients, doctors, appointments, and
+                medical records. The system was created with a focus on
+                improving workflow efficiency and patient experience.
+              </p>
+              <ul>
+                <li>
+                  Patient, Doctor, and Appointment management using separate
+                  classes.
+                </li>
+                <br />
+                <li>
+                  Driver class with menu for database interactions and a smooth
+                  user interface.
+                </li>
+                <br />
+                <li>
+                  Implemented various CRUD operations for managing patient
+                  records, doctor assignments, and appointment scheduling.
+                </li>
+                <br />
+                <li>
+                  Relational database design using MySQL to store and manage
+                  data efficiently.
+                </li>
+                <br />
+                <li>
+                  Developed with a modular structure for easy scalability and
+                  maintenance.
+                </li>
+                <br />
+              </ul>
+              <p>
+                <strong>Challenges & Solutions:</strong> One of the challenges
+                was optimizing database queries to handle large datasets of
+                patients. By using indexed queries and limiting the results
+                shown per page, the system became more responsive and efficient.
+              </p>
+            </div>
+
+            <!-- StudentInfo Management REST API -->
+            <div class="project">
+              <a
+                href="https://github.com/srinivas6303/Spring-Boot-Student-Info-Management-API"
+                ><h2>StudentInfo Management REST API</h2></a
+              >
+              <p>
+                <strong>Technologies:</strong> Spring Boot, JDBC |
+                <strong>IDE:</strong> Eclipse
+              </p>
+              <p>
+                <strong>Overview:</strong> The StudentInfo Management REST API
+                is a backend system designed to manage student records at an
+                educational institution. It provides a set of CRUD operations to
+                allow administrators to add, update, and delete student data,
+                and retrieve student information.
+              </p>
+              <ul>
+                <li>
+                  CRUD operations on MySQL database using Spring Data JPA.
+                </li>
+                <br />
+                <li>
+                  API tested with Postman and deployed on Tomcat for real-time
+                  functionality testing.
+                </li>
+                <br />
+                <li>
+                  Secure authentication mechanisms were implemented for data
+                  security, including JWT-based token authentication for API
+                  requests.
+                </li>
+                <br />
+                <li>
+                  Provides endpoints for creating, reading, updating, and
+                  deleting student records.
+                </li>
+                <br />
+              </ul>
+              <p>
+                <strong>Challenges & Solutions:</strong> One challenge was
+                managing multiple simultaneous requests to the API. This was
+                solved by optimizing the database queries, ensuring efficient
+                handling of concurrent user access through Spring Boot's
+                asynchronous features.
+              </p>
+            </div>
+
+            <!-- Alien Management REST API -->
+            <div class="project">
+              <a href="https://github.com/srinivas6303/Rest_API_Jersey"
+                ><h2>Alien Management REST API</h2></a
+              >
+              <p>
+                <strong>Technologies:</strong> Jersey, JDBC |
+                <strong>IDE:</strong> Eclipse
+              </p>
+              <p>
+                <strong>Overview:</strong> The Alien Management REST API is an
+                application designed to manage data about extraterrestrial
+                entities. It allows users to store and retrieve information on
+                different alien species, their characteristics, and encounters.
+              </p>
+              <ul>
+                <li>
+                  Implemented CRUD operations with JDBC for managing alien
+                  records stored in a MySQL database.
+                </li>
+                <br />
+                <li>
+                  Supports both JSON and XML data formats for flexibility in
+                  data exchange.
+                </li>
+                <br />
+                <li>
+                  API endpoints designed to provide efficient data retrieval
+                  with multiple search and filter capabilities.
+                </li>
+                <br />
+                <li>
+                  Tested thoroughly with Postman to ensure the API was
+                  functioning as expected, with unit tests added to validate
+                  business logic.
+                </li>
+              </ul>
+              <p>
+                <strong>Challenges & Solutions:</strong> One significant
+                challenge was ensuring that the API could handle both JSON and
+                XML responses efficiently. The solution was to implement content
+                negotiation based on the request header, allowing the client to
+                choose the format based on their preference.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- JavaScript for automatic scrolling -->
+    <script>
+      const container = document.getElementById("projectContainer");
+      let scrollAmount = 0;
+
+      function autoScroll() {
+        // Scroll by the width of the container (or adjust as necessary)
+        const scrollWidth = container.scrollWidth / container.children.length;
+
+        if (scrollAmount >= container.scrollWidth - container.clientWidth) {
+          scrollAmount = 0; // Reset when reaching the end
+        } else {
+          scrollAmount += scrollWidth; // Increment by one project width
+        }
+
+        container.scrollTo({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
+      }
+
+      setInterval(autoScroll, 4000); // Change slide every 2 seconds
+    </script>
+  </body>
+</html>
